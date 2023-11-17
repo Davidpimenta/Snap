@@ -3,6 +3,8 @@ function ativar(){
     btn.classList.toggle('ativar')
     const navatc = document.querySelector('menu')
     navatc.classList.toggle('navatc')
+    const Main = document.getElementById('main')
+    Main.classList.toggle('maindown')
 }
 
 var ct = 0

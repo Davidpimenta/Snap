@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and (orientation: landscape) {
+   .conteiner-menu{
+        padding-top: 80px;
+   }
+
+   .login{
+        margin-top: 0px;
+   }
+}
