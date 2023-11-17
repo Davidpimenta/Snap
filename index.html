@@ -61,28 +61,58 @@
     <header>
         <div class="conteiner-logo">
             <img class="logo"src="Images/intro-section-with-dropdown-navigation-main/images/logo.svg" alt="Logo">
+            <div class="menu-desk">
+                <div class="deskopt">
+                    Features <img src="Images/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" alt="arrow" class="imgdesk">  
+                </div>
+                <div class="menu-desk-opts" id="fdesk">
+                    <button class="opt-desk f"> <img src="Images/intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt=""> Todo List</button>
+                    <button class="opt-desk f"> <img src="Images/intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt=""> Calendar</button>
+                    <button class="opt-desk f"> <img src="Images/intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt=""> Reminders</button>
+                    <button class="opt-desk f"> <img src="Images/intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt=""> Planning</button>
+                </div>
+                <div class="deskopt" id="deskcompany">Company 
+                    <img src="Images/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg" id="imgCD" alt="">
+                </div>
+                <div class="menu-desk-opts" id="companydesk">
+                    <button class="opt-desk c">History</button>
+                    <button class="opt-desk c">Our Team</button>
+                    <button class="opt-desk c">Blog</button>
+                </div>
+                <div class="deskopt">Careers</div>
+                <div class="deskopt">About</div>
+            </div>
         </div>
         <button class="btn" onclick="ativar()" id="btn-menu">
             <span class="linha"></span>
             <span class="linha"></span>
             <span class="linha"></span>
         </button>
+        <div class="lgdesk">
+            <button class="lgopt" id="lgs">Login</button>
+            <button class="lgopt" id="rgs">Register</button>
+        </div>
     </header>
     <main id="main">
         <section class="image-center">
-            <img class="hero" src="Images/intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png" alt="Image-hero">
+            <picture>
+                <source media="(max-width:944px)" class="hero" srcset="Images/intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png">
+                <img src="Images/intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png" alt="Flowers" class="hero">
+            </picture>
+
         </section>
         <div class="text-center">
             <h1>Make remote work</h1>
             <p>Get your team in sync, no matter your location. Steamline processes, create team rituals, and watch productivity soar.</p>
-            <div><button class="more">Learn more</button></div>
+            <div><button class="more">Learn more</button>            
+            </div>
+            <footer class="ft">
+                <div class="emp"> <img class="img-final" src="Images/intro-section-with-dropdown-navigation-main/images/client-databiz.svg" alt=""></div>
+                <div class="emp"><img class="img-final p" src="Images/intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" alt=""></div>
+                <div class="emp"><img class="img-final" src="Images/intro-section-with-dropdown-navigation-main/images/client-meet.svg" alt=""></div>
+                <div class="emp"><img class="img-final" src="Images/intro-section-with-dropdown-navigation-main/images/client-maker.svg" alt=""></div>
+            </footer>
         </div>
-        <footer class="ft">
-            <div class="emp"> <img class="img-final" src="Images/intro-section-with-dropdown-navigation-main/images/client-databiz.svg" alt=""></div>
-            <div class="emp"><img class="img-final p" src="Images/intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" alt=""></div>
-            <div class="emp"><img class="img-final" src="Images/intro-section-with-dropdown-navigation-main/images/client-meet.svg" alt=""></div>
-            <div class="emp"><img class="img-final" src="Images/intro-section-with-dropdown-navigation-main/images/client-maker.svg" alt=""></div>
-        </footer>
     </main>
     
 

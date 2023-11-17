@@ -16,7 +16,12 @@
 
 /**Header**/
 
+body{
+    background-color: var(--cor0);
+}
+
 header{
+    position: relative;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -31,7 +36,6 @@ header{
 .logo{
     width: 90px;
 }
-
 
 .btn{
     z-index: 99;
@@ -315,10 +319,12 @@ p{
     color: var(--cor0);
     background-color: var(--cor2);
     font-size: 18px;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 15px;
     padding: 15px 25px;
     font-weight: 700;
+    cursor: pointer;
+
     transition: 0.2s;
 }
 
@@ -334,7 +340,7 @@ footer{
     justify-content: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 25px;
+    margin-block: 25px;
     gap: 10px;
 }
 
@@ -345,6 +351,114 @@ footer{
 .img-final{
     width: 80px;
 }   
+
+.menu-desk{
+    display: none;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.deskopt{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    color: var(--cor1);
+    font-size: 18px;
+    border: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.deskopt:hover{
+    color: var(--cor2);
+}
+
+.menu-desk-opts{
+    margin-top: 0px;
+    position: absolute;
+    top: 100%;
+    margin-top: 15px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    gap: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.199);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    display: flex;
+    transition: all 0.5s ease-out;
+    padding: 15px;
+    width: 96px;
+}
+
+#fdesk{
+    left: -18px;
+}
+
+.deskon{
+    display: flex;
+    justify-content: start;
+    opacity: 1;
+    transform: translateY(0px);
+    align-items: center;
+    justify-content: start;
+    transition: all 0.5s ease-out;
+}
+
+
+.opt-desk{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    background-color: transparent;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.opt-desk-active{
+    pointer-events: all;
+}
+
+
+#companydesk{
+    width: 70px;
+    padding-bottom: 20px;
+    left: 120px;
+}
+
+.lgdesk{
+    display: none;
+}
+
+.lgopt{
+    background-color: transparent;
+    border: 0;
+    padding: 0px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+#rgs{
+    border: 1px solid black;
+}
+
+.lgopt:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.404);
+}
+
 
 /*Main*/
 

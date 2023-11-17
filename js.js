@@ -57,4 +57,42 @@ company.addEventListener('click', ()=>{
     }
 })
 
+var ctd = 0
+const deskopt = document.querySelector('.deskopt')
+deskopt.addEventListener('click', ()=>{
+    const optdesk = document.querySelector('.menu-desk-opts')
+    optdesk.classList.toggle('deskon')
+    const imgdesk = document.querySelector('.imgdesk')
+    const optdeskf = document.querySelectorAll('.f')
+    optdeskf.forEach((e)=>{
+        e.classList.toggle('opt-desk-active')
+    })
 
+    if(ctd == 0){
+        ctd = 1
+        imgdesk.src = 'Images/intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg'
+    } else {
+        ctd = 0
+        imgdesk.src = 'Images/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg'
+    }
+})
+
+
+var ctdc = 0
+const cdesk = document.getElementById('deskcompany')
+const imgdeskC = document.getElementById('imgCD')
+cdesk.addEventListener('click', ()=>{
+    const optdeskC = document.getElementById('companydesk')
+    optdeskC.classList.toggle('deskon')
+    const optdeskc = document.querySelectorAll('.c')
+    optdeskc.forEach((e)=>{
+        e.classList.toggle('opt-desk-active')
+    })
+    if(ctdc == 0){
+        ctdc = 1
+        imgdeskC.src = 'Images/intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg'
+    } else {
+        ctdc = 0
+        imgdeskC.src = 'Images/intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg'
+    }
+})
